@@ -23,6 +23,10 @@ Most of the agent construction and execution activities will happen within `Gent
 ```
 export PYTHONPATH="$PWD/Gentopia:$PYTHONPATH"
 ```
+For window:
+```
+$env:PYTHONPATH = "$PWD\Gentopia;$env:PYTHONPATH"
+```
 In addition, since we will be using OpenAI's API, we also need to create a `.env` file under `GentPool` and put the API Key inside. The key will be registered as environmental variables at run time.
 ```
 cd GentPool
